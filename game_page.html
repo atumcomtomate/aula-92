@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adivinhe a Palavra</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+	<!-- Primeiro, vamos adicionar a tag h4 que será usada para conter o nome do jogador e uma tag span será
+usada para manter a pontuação do jogador. -->
+	<h4 id="player1Name"></h4> <span id="player1Score"></span>
+	<br>
+	<!-- Da mesma forma, adicione uma tag h4 e span para o jogador 2.
+ -->
+ 	<h4 id="player2Name"></h4> <span id="player2Score"></span>
+
+	<div class="container">
+	<center>
+		<h2 style="color: white;">Adivinhe a Palavra!</h2>
+
+		<!-- adicionar uma tag h3 que será usada para conter o nome do jogador que tem a vez de
+fazer a pergunta. -->
+		<h3 id="playerQuestion"></h3>
+
+		<!-- adicionar uma tag h3 para conter o nome do jogador que tem a vez de responder à
+pergunta. -->
+		<h3 id="playerAnswer"></h3>
+
+		<!-- adicionaremos um div que será usado para conter a palavra inserida, uma caixa de entrada
+para a resposta e um botão para verificar a palavra. Usar bootstrap col-lg-6-->
+		<div id="output" class="col-lg-6"> </div>
+
+		<br>
+		<br>
+
+		<label>Envie sua Palavra: <b style="color: red">Utilize uma palavra com 5 ou mais letras</b></label>
+
+		<!-- adicione uma caixa de entrada, que será usada para escrever a palavra que o questionador
+		deseja perguntar. ● Ele tem a classe de bootstrap form-control q-->
+		
+		<br>
+		
+		<!-- adicione uma tag br após esta caixa de entrada, para que haja espaço suficiente entre o
+		elemento de entrada e o elemento de botão. Este botão possui as classes bootstrap btn e btn-success -->
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
